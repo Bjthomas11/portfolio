@@ -1,34 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>HTML wireframe</title>
+    <title>Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
       rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
     />
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
-    <nav role="navigation">Nav</nav>
+    <div id="mobile-menu-open" class="shadow-large">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
     <main role="main">
       <header role="banner">
-        <h1>Hero</h1>
+        <div id="mobile-menu-close">
+          <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </header>
-      <section>
-        About Me
+      <!-- end of header -->
+      <section id="lead">
+        <div id="lead-content">
+          <h1>Brian Thomas</h1>
+          <h2>Full Stack Developer</h2>
+          <a href="#" class=" btn-rounded-white">Resume</a>
+        </div>
+        <!-- end of hero content -->
+        <div id="lead">
+          <span>
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+          </span>
+        </div>
+
+        <!-- about section -->
+        <div id="about">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <h2 class="heading">About Me</h2>
+              </div>
+              <div class="col-md-8">
+                <p>
+                  Hi I'm Brian, I have found my passion which is technology but
+                  more than that it's creating it!
+                </p>
+                <br />
+                <p>
+                  When I code something from an idea, it's truly special to me
+                  to see from a piece of paper to the front and back ends
+                  working on the screen. My inner nerd comes out when learning
+                  new frameworks or libraries and solving problems.
+                </p>
+                <br />
+                <p>
+                  When I'm not coding, I'm often called a sports buff because I
+                  love talking/watching sports especially baseball (Go RedSox!),
+                  outside of that I'm learning more and more on personal
+                  development, trying making myself better in all aspects.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
-      <section>
-        Projects
+      <!-- end of about section -->
+
+      <section id="projects" class="background-alt">
+        <h2 class="heading">Projects</h2>
+        <div class="container">
+          <div class="row">
+            <div class="project shadow-large">
+              <div class="project-image">
+                <img src="#" alt="#" />
+              </div>
+              <div class="project-info">
+                <h3>Sports Shore</h3>
+                <p>
+                  I'm a huge sports fan so I wanted try to create an app where
+                  you select your favorite teams from different sports and it
+                  shows up the current news articles from different sports media
+                  outlets.
+                </p>
+                <a
+                  href="https://hidden-fortress-78993.herokuapp.com/"
+                  target="_blank"
+                  >Demo</a
+                >
+                <hr />
+                <a
+                  href="https://github.com/Bjthomas11/Sports-Shore-Client"
+                  target="_blank"
+                  >Code</a
+                >
+                <br />
+                <a href="#"><i class="fab fa-html5"></i></a>
+                <a href="#"><i class="fab fa-css3-alt"></i></a>
+                <a href="#"><i class="fab fa-js-square"></i></a>
+                <a href="#"><i class="fab fa-react"></i></a>
+                <a href="#"><i class="fab fa-node"></i></a>
+              </div>
+            </div>
+            <!-- end of project 1 -->
+            <div class="project shadow-large">
+              <div class="project-image">
+                <img src="#" alt="#" />
+              </div>
+              <div class="project-info">
+                <h3>Where To!</h3>
+                <p>
+                  Where To app helps users to keep track of the places they
+                  visit by adding location name, a description of the place, and
+                  photos of the place. Each place will be saved to user profile
+                  that will be viewed and can be editing or delete along with
+                  adding new places you'd like to go!
+                </p>
+                <a
+                  href="https://stark-spire-27149.herokuapp.com/"
+                  target="_blank"
+                  >Demo</a
+                >
+                <hr />
+                <a
+                  href="https://github.com/Bjthomas11/where-to-places"
+                  target="_blank"
+                  >Code</a
+                >
+                <br />
+                <a href="#"><i class="fab fa-html5"></i></a>
+                <a href="#"><i class="fab fa-css3-alt"></i></a>
+                <a href="#"><i class="fab fa-js-square"></i></a>
+                <a href="#"><i class="fab fa-node"></i></a>
+              </div>
+            </div>
+            <!-- end of project 2 -->
+            <div class="project shadow-large">
+              <div class="project-image">
+                <img src="#" alt="#" />
+              </div>
+              <div class="project-info">
+                <h3>Hot or Cold Guessing Game</h3>
+                <p>
+                  Created a game where the user guesses a number between 1 and
+                  100 while giving you hot/cold feedback untill you guess the
+                  correct number!
+                </p>
+                <a
+                  href="https://gentle-mountain-15742.herokuapp.com/"
+                  target="_blank"
+                  >Demo</a
+                >
+                <hr />
+                <a
+                  href="https://github.com/Bjthomas11/Hot-Cold-React-Redux-Game"
+                  target="_blank"
+                  >Code</a
+                >
+                <br />
+                <a href="#"><i class="fab fa-html5"></i></a>
+                <a href="#"><i class="fab fa-css3-alt"></i></a>
+                <a href="#"><i class="fab fa-js-square"></i></a>
+                <a href="#"><i class="fab fa-react"></i></a>
+              </div>
+            </div>
+            <!-- end of project 3 -->
+            <div class="project shadow-large">
+              <div class="project-image">
+                <img src="#" alt="#" />
+              </div>
+              <div class="project-info">
+                <h3>TraCalorie</h3>
+                <p>
+                  Created a simple vanilla JS app that allows users to
+                  Add/Update/Delete Meal and calorie amounts to see the total
+                  Calories.
+                </p>
+                <a
+                  href="https://limitless-depths-19363.herokuapp.com/"
+                  target="_blank"
+                  >Demo</a
+                >
+                <hr />
+                <a
+                  href="https://github.com/Bjthomas11/TraCalorie"
+                  target="_blank"
+                  >Code</a
+                >
+                <br />
+                <a href="#"><i class="fab fa-html5"></i></a>
+                <a href="#"><i class="fab fa-css3-alt"></i></a>
+                <a href="#"><i class="fab fa-js-square"></i></a>
+              </div>
+            </div>
+            <!-- end of project 4 -->
+          </div>
+        </div>
       </section>
-      <section>
-        Skills/Education
+      <!-- end of project section -->
+
+      <section id="skills">
+        <h2 class="heading">Skills</h2>
+        <ul>
+          <h3>Front-End</h3>
+          <li>HTML5</li>
+          <li>CSS</li>
+          <li>JavaScript / ES6</li>
+          <li>jQuery</li>
+          <li>JSON/AJAX</li>
+          <li>Enyzme</li>
+        </ul>
+        <ul>
+          <h3>Back-End</h3>
+          <li>Node.js</li>
+          <li>Express</li>
+          <li>MongoDB</li>
+          <li>RESTful APIs</li>
+          <li>JWT Authentication</li>
+          <li>Mocha - Chai</li>
+        </ul>
+        <ul>
+          <h3>Frameworks/Libraries</h3>
+          <li>React</li>
+          <li>React-Router</li>
+          <li>Redux</li>
+          <li>Redux Form</li>
+          <li>Bootstrap</li>
+        </ul>
+        <ul>
+          <h3>Source Control</h3>
+          <li>Git</li>
+          <li>Github</li>
+          <li>Travis CI</li>
+          <li>Heroku</li>
+        </ul>
       </section>
-      <section>
-        Contact
+      <!-- end of skills section -->
+
+      <section id="contact">
+        <h2>Get In Touch</h2>
+        <div id="contact-form">
+          <form action="POST" action="">
+            <input
+              type="hidden"
+              name="_subject"
+              value="Contact request from personal website"
+            />
+            <input type="email" name="_replyto" placeholder="Email" required />
+            <textarea name="message" placeholder="Message" required></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
       </section>
+      <!-- end of contact section -->
     </main>
-    <footer role="content-info">Footer</footer>
+    <!-- end of main sections -->
+
+    <footer role="content-info">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5 copyright">
+            <p>
+              Copyright &copy; 2019 Brian Thomas
+            </p>
+          </div>
+          <div class="col-sm-2 top">
+            <span id="to-top">
+              <i class="fa fa-chevron-up" aria-hidden="true"></i>
+            </span>
+          </div>
+          <div class="col-sm-5 social">
+            <ul>
+              <li>
+                <a href="https://github.com/Bjthomas11" target="_blank">
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/brian-thomas-132350146/"
+                  target="_blank"
+                >
+                  <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:brianthomas571@gmail.com" target="_blank">
+                  <i class="fas fa-envelope-square" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end of footer -->
   </body>
 </html>
