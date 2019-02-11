@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Bjthomas11/portfolio#readme",
   "dependencies": {
+    "aos": "^3.0.0-beta.6",
     "bootstrap": "^4.2.1"
   }
 }
