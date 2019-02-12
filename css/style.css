@@ -1,10 +1,6 @@
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
-}
-body.active {
-  overflow: hidden;
-  z-index: -1;
 }
 
 @keyframes dropHeader {
@@ -17,9 +13,7 @@ body.active {
 }
 header {
   position: fixed;
-  opacity: 0.9;
   top: 0;
-  left: 0;
   right: 0;
   text-align: right;
   z-index: 10;
@@ -48,8 +42,7 @@ header a {
 header a:hover {
   color: #0e087f;
   text-decoration: none;
-  background: #eee;
-  border-radius: 4px;
+  border-bottom: 2px solid #0e087f;
 }
 header a:focus {
   color: #0e087f;
@@ -145,7 +138,7 @@ footer {
   padding: 10px;
 }
 .social a:hover {
-  color: #769fec;
+  color: #0e087f;
 }
 .btn-rounded-white {
   display: inline-block;
@@ -197,7 +190,7 @@ footer {
 
 #lead-content {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
