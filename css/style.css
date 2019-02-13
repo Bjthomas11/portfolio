@@ -2,6 +2,10 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
+body.active {
+  overflow: hidden;
+  z-index: -1;
+}
 @keyframes dropHeader {
   0% {
     transform: translateY(-150%);
@@ -23,7 +27,7 @@ header {
 }
 header ul {
   display: inline-block;
-  background: #fff;
+  background: #e4e3e3;
   text-align: center;
   padding: 10px;
   margin: 0;
@@ -73,12 +77,22 @@ header.active {
   display: none;
   text-align: right;
   width: 100%;
-  background: #fff;
+  background: #e4e3e3;
   font-size: 1.5em;
   padding-right: 15px;
   padding-top: 10px;
   cursor: pointer;
   color: #000;
+}
+hr.style-two {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
 }
 #mobile-menu-close span {
   font-size: 0.5em;
@@ -112,6 +126,19 @@ footer {
 }
 .top i {
   color: #6d6d6d;
+  animation: pulsate 1.5s ease;
+  animation-iteration-count: infinite;
+}
+@keyframes pulsate {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
 }
 .top i:hover {
   color: #000;
@@ -199,7 +226,7 @@ footer {
   margin: 0;
 }
 #lead-content h1 {
-  color: #c5c5c5;
+  color: #fff;
   font-size: 5em;
   text-transform: uppercase;
   line-height: 0.9em;
@@ -207,7 +234,7 @@ footer {
 #lead-content h2 {
   color: #769fec;
   font-weight: 500;
-  font-size: 2.25em;
+  font-size: 40px;
   margin-bottom: 15px;
 }
 
@@ -226,7 +253,6 @@ footer {
   height: 35px;
   border-radius: 50%;
   border: 3px solid #769fec;
-  text-align: center;
 }
 #lead-down i {
   animation: pulsate 1.5s ease;
@@ -449,13 +475,9 @@ footer {
   #lead-content a {
     padding: 10px 20px;
   }
-  #lead-down {
+  /* #lead-down {
     display: none;
-  }
-  .education-block h3,
-  .education-block span {
-    float: none;
-  }
+  } */
   .project-image {
     display: none;
   }
