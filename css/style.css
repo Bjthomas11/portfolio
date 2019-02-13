@@ -84,16 +84,6 @@ header.active {
   cursor: pointer;
   color: #000;
 }
-hr.style-two {
-  border: 0;
-  height: 1px;
-  background-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 0.75),
-    rgba(0, 0, 0, 0)
-  );
-}
 #mobile-menu-close span {
   font-size: 0.5em;
   text-transform: uppercase;
