@@ -1,3 +1,3 @@
-<a href="https://bjthomas11.github.io/portfolio/">Portfolio</a>
+<a href="https://bjthomas11.github.io/portfolio/" target="_blank">Portfolio</a>
 
 # Portfolio Site
