@@ -1,6 +1,5 @@
 (function($) {
   $("html").removeClass("no-js");
-
   // Animate to section when nav is clicked
   $("header a").click(function(e) {
     if ($(this).hasClass("no-scroll")) return;
