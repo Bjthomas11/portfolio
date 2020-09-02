@@ -312,6 +312,15 @@ footer {
     padding: 1rem;
 }
 
+#skills .title {
+    font-size: 1.25rem;
+    text-decoration: underline;
+}
+
+#skills li {
+    font-size: .875rem
+}
+
 #social-image {
     width: 100%;
 }
@@ -441,6 +450,16 @@ footer i {
 }
 
 @media screen and (max-width: 768px) {
+    #skills {
+        display: block;
+        text-align: center;
+    }
+
+    #skills ul {
+        padding-left: 0;
+    }
+
+
     .intro-container {
         grid-template-columns: 1fr;
         grid-template-areas:
