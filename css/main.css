@@ -425,6 +425,14 @@ footer {
     padding-left: 30px;
 }
 
+.inner-footer .social-icons li a:hover {
+    color: #0c535e !important;
+}
+
+footer i {
+    font-size: 2rem;
+}
+
 
 @media screen and (max-width: 1200px) {
     .main-container {
