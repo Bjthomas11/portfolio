@@ -352,6 +352,7 @@ footer {
     height: 180px;
     display: block;
     object-fit: cover;
+    border-bottom: 1px solid #eaeaea
 }
 
 .post-container .post-preview {
