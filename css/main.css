@@ -366,7 +366,8 @@ footer {
 
 }
 
-.post-preview .post-intro {
+.post-preview .post-intro,
+.post-preview .inner-skills {
     color: #4b5156;
     font-size: 14px;
 }
