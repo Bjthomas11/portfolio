@@ -7,7 +7,10 @@
     --themeDotBorder: #24292e;
     --previewBg: rgb(251, 249, 243, .8);
     --previewShadow: #f0ead6;
-    --btnColor: #000
+    --btnColor: #68b2d0;
+    --btnHoverColor: #17a2b8;
+    --linkColor: #68b2d0;
+    --linkHoverColor: #17a2b8;
 }
 
 
@@ -28,7 +31,8 @@ h2,
 h3,
 h4,
 h5,
-h6 strong {
+h6,
+strong {
     color: var(--mainText);
     font-weight: 500;
 }
@@ -63,7 +67,11 @@ h6 {
 
 a {
     text-decoration: none;
-    color: #17a2b8 !important;
+    color: var(--linkColor);
+}
+
+a:hover {
+    color: var(--linkHoverColor);
 }
 
 ul {
@@ -216,12 +224,12 @@ footer {
     background-color: #15202b;
 }
 
-#green-mode {
-    background-color: #78866b;
+#orange-mode {
+    background-color: #DDA77B;
 }
 
-#purple-mode {
-    background-color: #7e4c74;
+#red-mode {
+    background-color: #945D5E;
 }
 
 .left-column h5 {
@@ -340,6 +348,11 @@ footer {
 
 }
 
+.post strong {
+    color: #000;
+    font-weight: 600;
+}
+
 .post-container .post {
     border: 1px solid var(--borderColor);
     -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
@@ -416,6 +429,10 @@ footer {
     border: none;
 }
 
+#submit-btn:hover {
+    background-color: var(--btnHoverColor);
+}
+
 .inner-footer .copy {
     color: var(--secondaryText);
 }
@@ -436,9 +453,6 @@ footer {
     padding-left: 30px;
 }
 
-.inner-footer .social-icons li a:hover {
-    color: #0c535e !important;
-}
 
 footer i {
     font-size: 2rem;
