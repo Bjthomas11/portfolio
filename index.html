@@ -1,339 +1,395 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Brian's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico" />
+    <!-- assets -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <link id="theme-style" rel="stylesheet" href="" />
+  </head>
 
-<head>
-  <title>Brian's Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico" />
-  <!-- assets -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" />
-  <link rel="stylesheet" href="./css/main.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap"
-    rel="stylesheet" />
-  <link id="theme-style" rel="stylesheet" href="" />
-</head>
+  <body>
+    <section class="s1">
+      <div class="main-container">
+        <div class="greeting-container">
+          <h1>Hi, I'm Brian!</h1>
+        </div>
+        <div class="intro-container">
+          <nav class="nav-container">
+            <div class="left-dots">
+              <div class="browser-dot" id="dot-1"></div>
+              <div class="browser-dot" id="dot-2"></div>
+              <div class="browser-dot" id="dot-3"></div>
+            </div>
+            <ul class="contact-text" id="navigation">
+              <li>
+                <a href="#contact-form">Contact</a>
+              </li>
+              <li>
+                <a
+                  href="https://resume.creddle.io/resume/4cfgx295s56"
+                  target="_blank"
+                  >Resume</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="left-column">
+            <img
+              src="./media/about-pic.jpg"
+              alt="profile-img"
+              id="profile-img"
+            />
+            <h5 style="text-align: center">Personalize Theme</h5>
 
-<body>
-  <section class="s1">
-    <div class="main-container">
-      <div class="greeting-container">
-        <h1>Hi, I'm Brian!</h1>
-      </div>
-      <div class="intro-container">
-        <nav class="nav-container">
-          <div class="left-dots">
-            <div class="browser-dot" id="dot-1"></div>
-            <div class="browser-dot" id="dot-2"></div>
-            <div class="browser-dot" id="dot-3"></div>
+            <div id="theme-options-container">
+              <div data-mode="light" class="theme-dot" id="light-mode"></div>
+              <div data-mode="blue" class="theme-dot" id="blue-mode"></div>
+              <div data-mode="orange" class="theme-dot" id="orange-mode"></div>
+              <div data-mode="red" class="theme-dot" id="red-mode"></div>
+            </div>
+            <p class="settings-note">
+              Colored theme will be saved for <br />
+              your next visit
+            </p>
           </div>
-          <ul class="contact-text" id="navigation">
+          <div class="right-column">
+            <div id="preview-shadow">
+              <div id="preview">
+                <div class="corner" id="corner-tl"></div>
+                <div class="corner" id="corner-tr"></div>
+
+                <h3>Front End Developer</h3>
+                <p>
+                  I'm currently a Front End Developer but on the side I enjoy
+                  creating/learning new technologies to help myself and the
+                  community!
+                </p>
+                <div class="corner" id="corner-br"></div>
+                <div class="corner" id="corner-bl"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="s2">
+      <div class="main-container">
+        <div class="about-container">
+          <div class="about-me">
+            <h4>More about me.</h4>
+            <p>
+              I found my passion of code in 2018 after seeing someone recreate
+              Amazon from scratch with a backend and looking identical. As I
+              dived more into it, I've found myself up till 4am every night
+              learning more and starting to create little applications and
+              loving it. Now I continue to build applications but at a
+              bigger/complex scale to grow myself and also, engage that nerdy
+              side of me.
+            </p>
+            <p>
+              What keeps me going after engaging with a computer for 10+ hours a
+              day is knowing that I'm helping a client/company's journey come
+              together by creating a solution and/or being a apart of process
+              with the team.
+            </p>
+            <hr />
+            <h4>Skills</h4>
+
+            <div id="skills">
+              <ul>
+                <li class="title">Front-End</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript (ES6)</li>
+                <li>jQuery</li>
+              </ul>
+              <ul>
+                <li class="title">Back-End</li>
+                <li>Node.js</li>
+              </ul>
+              <ul>
+                <li class="title">Frameworks</li>
+                <li>React</li>
+                <li>Redux</li>
+                <li>Express</li>
+                <li>Sass</li>
+                <li>Bootstrap</li>
+                <li>Foundation</li>
+                <li>Materialize</li>
+                <li>Material-UI</li>
+              </ul>
+              <ul>
+                <li class="title">Deployment</li>
+                <li>Firebase</li>
+                <li>Netlify</li>
+                <li>Heroku</li>
+                <li>AWS</li>
+              </ul>
+              <ul>
+                <li class="title">Source Control</li>
+                <li>Git</li>
+                <li>GitLab</li>
+                <li>Github</li>
+                <li>Bitbucket</li>
+              </ul>
+              <ul>
+                <li class="title">Testing</li>
+                <li>Mocha</li>
+                <li>Chai</li>
+                <li>Enyzme</li>
+                <li>Jest</li>
+              </ul>
+            </div>
+            <p>
+              <a
+                href="https://resume.creddle.io/resume/4cfgx295s56"
+                target="_blank"
+                >Get Resume</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="s1">
+      <div class="main-container pt-3">
+        <h3 style="text-align: center">Projects</h3>
+        <div class="post-container">
+          <div class="post-inner-container">
+            <div class="post">
+              <img class="thumbnail" src="./media/apple-homepage.png" alt="" />
+              <div class="post-preview">
+                <h5 class="post-title">Apple Store</h5>
+                <p class="post-intro">
+                  Apple Store E-Commerce platform built with the MERN stack &
+                  Redux. Mobile Responsive
+                </p>
+                <p class="inner-skills">
+                  <strong>Tech used:</strong> SASS, React, Axios, Redux,
+                  Node.js, Express, Heroku
+                </p>
+                <div class="post-links">
+                  <a
+                    href="https://github.com/Bjthomas11/Apple-Store-Ecommerce-React"
+                    target="_blank"
+                    >Code</a
+                  >
+                  <a href="https://applestoreapp.herokuapp.com/" target="_blank"
+                    >Demo</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="post-inner-container">
+            <div class="post">
+              <img class="thumbnail" src="./media/trinity_client.png" alt="" />
+              <div class="post-preview">
+                <h5 class="post-title">Trinity Consultants</h5>
+                <p class="post-intro">
+                  The sole Front End Developer of a complete React website
+                  rebuild/redesign. Keeping there current Ucommerce mission in
+                  mind, my goal was to create a better user experience, cleaner
+                  design and using a mobile first approach. Mobile Responsive
+                </p>
+                <p class="inner-skills">
+                  <strong>Tech used:</strong> JS, SASS/SCSS, React, SEO, Stripe
+                  API, Google Maps API, JSON/AJAX
+                </p>
+                <div class="post-links">
+                  <a href="https://www.trinityconsultants.com/" target="_blank"
+                    >Site</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="post-inner-container">
+            <div class="post">
+              <img class="thumbnail" src="./media/Medprop.png" alt="" />
+              <div class="post-preview">
+                <h5 class="post-title">MedpropertiesLP</h5>
+                <p class="post-intro">
+                  As the lead Front End Developer for this client, I worked on a
+                  complete redesign on there site keeping there mission of
+                  simple but yet coming across as modern. Mobile Responsive
+                </p>
+                <p class="inner-skills">
+                  <strong>Tech used:</strong> HTML, CSS, JS, PHP, Wordpress
+                </p>
+                <div class="post-links">
+                  <a href="https://www.medpropertieslp.com/" target="_blank"
+                    >Site</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="post-inner-container">
+            <div class="post">
+              <img class="thumbnail" src="./media/ultra-agency.png" alt="" />
+              <div class="post-preview">
+                <h5 class="post-title">Ultra Agency</h5>
+                <p class="post-intro">
+                  Created a dummy Front-End Agency site called Ultra, showing
+                  the different models while sticking with a simplistic, clean,
+                  modern approach. Mobile Responsive
+                </p>
+                <p class="inner-skills">
+                  <strong>Tech used:</strong> React, React-Router-DOM,
+                  Style-Components, Materialize, Netlify
+                </p>
+                <div class="post-links">
+                  <a
+                    href="https://github.com/Bjthomas11/agency-react-site"
+                    target="_blank"
+                    >Code</a
+                  >
+                  <a href="https://ultra-react.netlify.app/" target="_blank"
+                    >Site</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="post-inner-container">
+            <div class="post">
+              <img class="thumbnail" src="./media/pizza-react.png" alt="" />
+              <div class="post-preview">
+                <h5 class="post-title">Pizza!</h5>
+                <p class="post-intro">
+                  Everybody loves Pizza!! So I created a simple Front-End site
+                  off of Pizza! Mobile Responsive
+                </p>
+                <p class="inner-skills">
+                  <strong>Tech used:</strong> React, React-Router-DOM,
+                  Styled-Components, Netlify
+                </p>
+                <div class="post-links">
+                  <a href="https://pizza-reactjs.netlify.app/" target="_blank"
+                    >Site</a
+                  >
+                  <a
+                    href="https://github.com/Bjthomas11/Pizza-React-Site"
+                    target="_blank"
+                    >Code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="post-inner-container">
+            <div class="post">
+              <img class="thumbnail" src="./media/github-finder.png" alt="" />
+              <div class="post-preview">
+                <h5 class="post-title">GitHub Finder</h5>
+                <p class="post-intro">
+                  App that you can search for all Github Users, see there latest
+                  repos, see there profile information along with, if there
+                  Hireable or not. You can also view there github and view there
+                  github repo. Mobile Responsive
+                </p>
+                <p class="inner-skills">
+                  <strong>Tech used:</strong> React, Axios, React-Router-DOM,
+                  GitHub API, Context API, Bootstrap
+                </p>
+                <div class="post-links">
+                  <a
+                    href="https://github-finder-reactjs982.netlify.app/"
+                    target="_blank"
+                    >App</a
+                  >
+                  <a
+                    href="https://github.com/Bjthomas11/Github-Finder"
+                    target="_blank"
+                    >Code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="s2">
+      <div class="main-container pt-3">
+        <h3 style="text-align: center">Get In Touch</h3>
+        <form
+          action="http://formspree.io/brianthomas571@gmail.com"
+          method="POST"
+          id="contact-form"
+        >
+          <label for="name">Name</label>
+          <input type="text" class="input-field" id="name" name="name" />
+
+          <label for="subject">Subject</label>
+          <input type="text" class="input-field" id="subject" name="subject" />
+
+          <label for="email">Email</label>
+          <input type="email" class="input-field" id="email" name="email" />
+
+          <label for="message">Message</label>
+          <textarea class="input-field" id="message" name="message"></textarea>
+
+          <input id="submit-btn" type="submit" value="Send" />
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer-container">
+      <div class="container inner-footer">
+        <div class="copy">
+          Copyright
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          Brian Thomas
+        </div>
+        <div class="social-icons">
+          <ul>
             <li>
-              <a href="#contact-form">Contact</a>
+              <a href="https://github.com/Bjthomas11">
+                <i class="fab fa-github"></i>
+              </a>
             </li>
             <li>
-              <a href="https://resume.creddle.io/resume/4cfgx295s56" target="_blank">Resume</a>
+              <a href="https://www.linkedin.com/in/brian-thomas-132350146/">
+                <i class="fab fa-linkedin-in"> </i>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:brianthomas571@gmail.com">
+                <i class="fa fa-envelope-square"></i>
+              </a>
             </li>
           </ul>
-        </nav>
-        <div class="left-column">
-          <img src="./media/about-pic.jpg" alt="profile-img" id="profile-img" />
-          <h5 style="text-align: center">Personalize Theme</h5>
-
-          <div id="theme-options-container">
-            <div data-mode="light" class="theme-dot" id="light-mode"></div>
-            <div data-mode="blue" class="theme-dot" id="blue-mode"></div>
-            <div data-mode="orange" class="theme-dot" id="orange-mode"></div>
-            <div data-mode="red" class="theme-dot" id="red-mode"></div>
-          </div>
-          <p class="settings-note">
-            Colored theme will be saved for <br />
-            your next visit
-          </p>
-        </div>
-        <div class="right-column">
-          <div id="preview-shadow">
-            <div id="preview">
-              <div class="corner" id="corner-tl"></div>
-              <div class="corner" id="corner-tr"></div>
-
-              <h3>Front End Developer</h3>
-              <p>
-                I'm currently a Front End Developer but on the side I enjoy
-                creating/learning new technologies to help myself and the
-                community!
-              </p>
-              <div class="corner" id="corner-br"></div>
-              <div class="corner" id="corner-bl"></div>
-            </div>
-          </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="s2">
-    <div class="main-container">
-      <div class="about-container">
-        <div class="about-me">
-          <h4>More about me.</h4>
-          <p>
-            I found my passion of code in 2018 after seeing someone recreate
-            Amazon from scratch with a backend and looking identical. As I
-            dived more into it, I've found myself up till 4am every night
-            learning more and starting to create little applications and
-            loving it. Now I continue to build applications but at a
-            bigger/complex scale to grow myself and also, engage that nerdy
-            side of me.
-          </p>
-          <p>
-            What keeps me going after engaging with a computer for 10+ hours a
-            day is knowing that I'm helping a client/company's journey come
-            together by creating a solution and/or being a apart of process
-            with the team.
-          </p>
-          <hr />
-          <h4>Skills</h4>
-
-          <div id="skills">
-            <ul>
-              <li class="title">Front-End</li>
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>JavaScript (ES6)</li>
-              <li>jQuery</li>
-            </ul>
-            <ul>
-              <li class="title">Back-End</li>
-              <li>Node.js</li>
-            </ul>
-            <ul>
-              <li class="title">Frameworks</li>
-              <li>React</li>
-              <li>Redux</li>
-              <li>Express</li>
-              <li>Sass</li>
-              <li>Bootstrap</li>
-              <li>Foundation</li>
-              <li>Materialize</li>
-              <li>Material-UI</li>
-            </ul>
-            <ul>
-              <li class="title">Deployment</li>
-              <li>Firebase</li>
-              <li>Netlify</li>
-              <li>Heroku</li>
-              <li>AWS</li>
-            </ul>
-            <ul>
-              <li class="title">Source Control</li>
-              <li>Git</li>
-              <li>GitLab</li>
-              <li>Github</li>
-              <li>Bitbucket</li>
-            </ul>
-            <ul>
-              <li class="title">Testing</li>
-              <li>Mocha</li>
-              <li>Chai</li>
-              <li>Enyzme</li>
-              <li>Jest</li>
-            </ul>
-          </div>
-          <p>
-            <a href="https://resume.creddle.io/resume/4cfgx295s56" target="_blank">Get Resume</a>
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="s1">
-    <div class="main-container pt-3">
-      <h3 style="text-align: center">Projects</h3>
-      <div class="post-container">
-        <div class="post-inner-container">
-          <div class="post">
-            <img class="thumbnail" src="./media/apple-homepage.png" alt="" />
-            <div class="post-preview">
-              <h5 class="post-title">Apple Store</h5>
-              <p class="post-intro">
-                Apple Store E-Commerce platform built with the MERN stack & Redux.
-              </p>
-              <p class="inner-skills">
-                <strong>Tech used:</strong> SASS, React, Axios, Redux,
-                Node.js, Express, Heroku
-              </p>
-              <div class="post-links">
-                <a href="https://github.com/Bjthomas11/Apple-Store-Ecommerce-React" target="_blank">Code</a>
-                <a href="https://applestoreapp.herokuapp.com/" target="_blank">Demo</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="post-inner-container">
-          <div class="post">
-            <img class="thumbnail" src="./media/trinity_client.png" alt="" />
-            <div class="post-preview">
-              <h5 class="post-title">
-                Trinity Consultants (Still In Progress)
-              </h5>
-              <p class="post-intro">
-                The sole Front End Developer of a complete React website
-                rebuild/redesign. Keeping there current Ucommerce mission in
-                mind, my goal was to create a better user experience, cleaner
-                design and using a mobile first approach.
-              </p>
-              <p class="inner-skills">
-                <strong>Tech used:</strong> JS, SASS/SCSS, React, SEO, Stripe
-                API, Google Maps API, JSON/AJAX
-              </p>
-              <div class="post-links">
-                <a href="https://trinitystage-web.azurewebsites.net/" target="_blank">Staging Site</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="post-inner-container">
-          <div class="post">
-            <img class="thumbnail" src="./media/Medprop.png" alt="" />
-            <div class="post-preview">
-              <h5 class="post-title">MedpropertiesLP</h5>
-              <p class="post-intro">
-                As the lead Front End Developer, I worked on a complete
-                redesign on there site keeping there mission of simple but yet
-                coming across as modern.
-              </p>
-              <p class="inner-skills">
-                <strong>Tech used:</strong> HTML, CSS, JS, PHP, Wordpress
-              </p>
-              <div class="post-links">
-                <a href="https://www.medpropertieslp.com/" target="_blank">Site</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="post-inner-container">
-          <div class="post">
-            <img class="thumbnail" src="./media/expense-tracker.png" alt="" />
-            <div class="post-preview">
-              <h5 class="post-title">Expense Tracker</h5>
-              <p class="post-intro">
-                You can track your expenses and see a history of them as well
-                as see an updated balance.
-              </p>
-              <p class="inner-skills">
-                <strong>Tech used:</strong> Sass, React, ContextAPI, Firebase
-              </p>
-              <div class="post-links">
-                <a href="https://github.com/Bjthomas11/Expense-Tracker-React" target="_blank">Code</a>
-                <a href="https://expense-tracker-936c1.web.app/" target="_blank">Demo</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="post-inner-container">
-          <div class="post">
-            <img class="thumbnail" src="./media/BT_whereto.png" alt="" />
-            <div class="post-preview">
-              <h5 class="post-title">Where To</h5>
-              <p class="post-intro">
-                Travel Itinerary but with just photos from the places you have
-                traveled to.
-              </p>
-              <p class="inner-skills">
-                <strong>Tech used:</strong> JS, React, Node, MongoDB, Chai,
-                CSS, Heroku
-              </p>
-              <div class="post-links">
-                <a href="https://stark-spire-27149.herokuapp.com/" target="_blank">Demo</a>
-                <a href="https://github.com/Bjthomas11/where-to-places" target="_blank">Code</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="post-inner-container">
-          <div class="post">
-            <img class="thumbnail" src="./media/calorie.png" alt="" />
-            <div class="post-preview">
-              <h5 class="post-title">TraCalorie</h5>
-              <p class="post-intro">
-                A calorie amount application to see the total calories for
-                each Item. A very simple app showing the workings of Vanilla
-                JS.
-              </p>
-              <p class="inner-skills">
-                <strong>Tech used:</strong> JS, HTML, CSS
-              </p>
-              <div class="post-links">
-                <a href="https://limitless-depths-19363.herokuapp.com/" target="_blank">Demo</a>
-                <a href="https://github.com/Bjthomas11/TraCalorie" target="_blank">Code</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="s2">
-    <div class="main-container pt-3">
-      <h3 style="text-align: center">Get In Touch</h3>
-      <form action="http://formspree.io/brianthomas571@gmail.com" method="POST" id="contact-form">
-        <label for="name">Name</label>
-        <input type="text" class="input-field" id="name" name="name" />
-
-        <label for="subject">Subject</label>
-        <input type="text" class="input-field" id="subject" name="subject" />
-
-        <label for="email">Email</label>
-        <input type="email" class="input-field" id="email" name="email" />
-
-        <label for="message">Message</label>
-        <textarea class="input-field" id="message" name="message"></textarea>
-
-        <input id="submit-btn" type="submit" value="Send" />
-      </form>
-    </div>
-  </section>
-
-  <footer class="footer-container">
-    <div class="container inner-footer">
-      <div class="copy">
-        Copyright
-        <script>
-          document.write(new Date().getFullYear());
-        </script>
-        Brian Thomas
-      </div>
-      <div class="social-icons">
-        <ul>
-          <li>
-            <a href="https://github.com/Bjthomas11">
-              <i class="fab fa-github"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/brian-thomas-132350146/">
-              <i class="fab fa-linkedin-in"> </i>
-            </a>
-          </li>
-          <li>
-            <a href="mailto:brianthomas571@gmail.com">
-              <i class="fa fa-envelope-square"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-  <script src="./js/script.js"></script>
-</body>
-
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
